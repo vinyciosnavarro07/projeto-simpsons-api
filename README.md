@@ -49,8 +49,9 @@ Além disso, o conteúdo da API é divertido, com personagens carismáticos e fr
 
 🌐 Link do Projeto
 
-🔗 GitHub Pages: https://vinyciosnavarro07.github.io/projeto-api-simpsons
-🔗 Repositório: https://github.com/vinyciosnavarro07/projeto-api-simpsons
+🔗 GitHub Pages: [https://vinyciosnavarro07.github.io/projeto-api-simpsons](https://vinyciosnavarro07.github.io/projeto-simpsons-api/)
+
+🔗 Repositório: [https://github.com/vinyciosnavarro07/projeto-api-simpsons](https://github.com/vinyciosnavarro07/projeto-simpsons-api)
 
 📜 Licença
 
