@@ -6,12 +6,6 @@
  * URL da API: https://thesimpsonsapi.com/api/episodes
  *************************************************************************************************/
 
-async function traduzirTexto(texto) {
-    const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(texto)}&langpair=en|pt`);
-    const data = await response.json();
-    return data.responseData.translatedText || texto;
-}
-
 let paginaAtual = 1;
 
 function setCreateCard(episodios) {
