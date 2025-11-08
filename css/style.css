@@ -1,0 +1,421 @@
+/* ===============================
+   TEMA: OS SIMPSONS
+   Autor: Vinycios Navarro
+   =============================== */
+
+/* Paleta de Cores Simpsons
+   Azul Ciano: #00AEEF
+   Amarelo Homer: #FED90F
+   Branco Nuvem: #FFFFFF
+   Cinza Springfield: #F4F4F4
+   Marrom: #8B5E3C
+   Preto: #000000
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F4F4;
+  font-family: 'Luckiest Guy', cursive;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== HEADER ===== */
+header {
+  width: 100%;
+  background-color: #00AEEF;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ===== MENU PRINCIPAL ===== */
+#caixa_menu {
+  background-color: #fcd20b;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#logo img {
+  height: 60px;
+}
+
+/* Itens do menu */
+.menu-items {
+  display: flex;
+  gap: 20px;
+}
+
+.item_menu a, 
+.item_menu {
+  color: #0c4da2;
+  text-decoration: none;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.item_menu:hover a,
+.item_menu:hover {
+  color: #fff;
+}
+
+/* ===== BOTÃO HAMBÚRGUER ===== */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #0c4da2;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ===== RESPONSIVO ===== */
+@media screen and (max-width: 768px) {
+  .menu-items {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background-color: #fcd20b;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  .menu-items.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+/* ===== CABEÇALHO ===== */
+#header.back_image {
+  background: url('../imagens/clouds-bg.jpg') center/cover no-repeat;
+  height: 500px;
+  position: relative;
+
+}
+
+#caixa_header {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#caixa_header h1 {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3em;
+  color: #FED90F;
+  text-shadow: 3px 3px 0 #000;
+  -webkit-text-stroke: 1px #000; 
+}
+
+@media screen and (max-width: 768px) {
+  #caixa_header h1 {
+  font-size: 2em;
+}
+}
+
+/* ===== SEÇÃO PRINCIPAL ===== */
+#personagem {
+  padding: 60px 20px;
+}
+#epsodio {
+  padding: 60px 20px;
+}
+#localizacao {
+  padding: 60px 20px;
+}
+
+.titulo span {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.5em;
+  color: #004D9D;
+  text-shadow: 2px 2px 0 #FED90F;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* ===== CARDS ===== */
+.personagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caixa_personagem {
+  position: relative;
+  background-color: #fff;
+  width: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.caixa_personagem:hover {
+  transform: scale(1.05);
+}
+
+.caixa_titulo {
+  background-color: #FED90F;
+  text-align: center;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.3em;
+  color: #004D9D;
+  padding: 10px;
+}
+
+.caixa_imagem img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.caixa_texto {
+  padding: 15px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.episodios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caixa_episodios {
+  position: relative;
+  background-color: #fff;
+  width: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.caixa_episodios:hover {
+  transform: scale(1.05);
+}
+
+.localizacoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caixa_localizacao {
+  position: relative;
+  background-color: #fff;
+  width: 260px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.caixa_localizacao:hover {
+  transform: scale(1.05);
+}
+
+
+.comprar {
+  background-color: #00AEEF;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border-top: 2px solid #FED90F;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.comprar:hover {
+  background-color: #004D9D;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #004D9D;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 0.9em;
+}
+
+/* ===== UTILIDADES ===== */
+.center {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.seta a {
+  z-index: 99;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #FED90F;
+  color: #004D9D;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.seta a:hover {
+  background-color: #00AEEF;
+  color: #fff;
+}
+
+.btn-ver-mais {
+  font-family: 'Luckiest Guy', cursive;
+  display: block;
+  margin: 30px auto;
+  background-color: #0c4da2;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.btn-ver-mais:hover {
+  background-color: #fcd20b;
+  color: #0c4da2;
+  transform: scale(1.05);
+}
+
+.btn-curtir {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  background-color: #ffca0a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.btn-curtir:hover {
+  background-color: #f7b800;
+  transform: scale(1.05);
+}
+
+.btn-curtir.curtido {
+  background-color: #ff8800;
+  color: white;
+}
+
+#sobre {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.sobre-imagem img {
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.sobre-texto {
+  max-width: 500px;
+  color: #333;
+}
+
+.sobre-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fdd835;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-imagem img {
+    width: 250px;
+  }
+
+  .sobre-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .sobre-texto p {
+    font-size: 1rem;
+  }
+}
+
+.link__footer{
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: underline;
+}
+
+.link__footer:hover{
+  transition: 0.3s;
+  color: #f7b800;
+}

@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    <title>
+        Projeto Simpsons
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/carregaPersonagens.js" defer type="module"></script>
+    <script src="js/carregaEpisodios.js" defer type="module"></script>
+    <script src="js/carregaLocalizacoes.js" defer type="module"></script>
+    <script src="js/menuTogle.js" defer type="module"></script>
+</head>
+
+<body>
+    <header>
+        <!-- AREA DO MENU -->
+        <nav id="caixa_menu">
+            <div id="menu" class="center">
+                <div id="logo">
+                    <img src="imagens/logo-simpsons.png" alt="Logo Simpsons">
+                </div>
+
+                <div id="menu-toggle" class="menu-toggle">
+                    ☰
+                </div>
+
+                <div class="menu-items" id="menu-items">
+                    <div class="item_menu">Home</div>
+                    <div class="item_menu"><a href="#personagem">Personagens</a></div>
+                    <div class="item_menu"><a href="#epsodio">Episódios</a></div>
+                    <div class="item_menu"><a href="#localizacao">Localizações</a></div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- AREA DO CABEÇALHO -->
+        <div id="header" class="back_image">
+            <div id="caixa_header" class="center">
+                <h1>Projeto Simpsons</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="seta">
+            <a href="#caixa_menu">Voltar ao topo</a>
+        </div>
+
+        <section id="sobre">
+  <div class="sobre-container center">
+    <div class="sobre-imagem">
+      <img src="imagens/The_Simpsons_Simpsons_Family_Picture.png" alt="Os Simpsons">
+    </div>
+    <div class="sobre-texto">
+      <h2>Sobre Os Simpsons</h2>
+      <p>
+        <strong>Os Simpsons</strong> é uma das séries animadas mais icônicas da televisão. Criada por Matt Groening,
+        ela estreou em 1989 e desde então tem retratado, com muito humor e sátira, o cotidiano da família Simpson na
+        fictícia cidade de <em>Springfield</em>.  
+        <br><br>
+        A série é conhecida por suas críticas sociais, personagens marcantes e previsões surpreendentes que se tornaram
+        parte da cultura pop mundial.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <!-- SEÇÃO PERSONAGENS -->
+        <section id="personagem">
+            <!-- <div class="seta">
+                <a href="#header"> seta </a>
+            </div> -->
+            <div id="caixa_personagem" class="center">
+                <div class="titulo">
+                    <span>Personagens</span>
+                </div>
+                <div class="conteudo">
+                    <div class="personagens" id="cardPersonagens">
+
+                        <!-- <div class="caixa_personagem">
+                                <h2 class="caixa_titulo">
+                                    Nome do produto
+                                </h2>
+                                <figure class="caixa_imagem">
+                                    <img src="imagens/icone01.png">
+                                </figure>
+                                <div class="caixa_texto">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                    
+                                </div>
+                                
+                                <div class="comprar">Comprar</div> 
+                            </div>  -->
+
+
+                    </div>
+
+                </div>
+                <button id="btnVerMaisPersonagens" class="btn-ver-mais">Ver mais personagens</button>
+            </div>
+        </section>
+
+        <section id="epsodio">
+            <!-- <div class="seta">
+                <a href="#header"> seta </a>
+            </div> -->
+            <div id="caixa_epsodio" class="center">
+                <div class="titulo">
+                    <span>Epsódios</span>
+                </div>
+                <div class="conteudo">
+                    <div class="episodios" id="cardEpisodios">
+
+                        <!-- <div class="caixa_personagem">
+                                <h2 class="caixa_titulo">
+                                    Nome do produto
+                                </h2>
+                                <figure class="caixa_imagem">
+                                    <img src="imagens/icone01.png">
+                                </figure>
+                                <div class="caixa_texto">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                    
+                                </div>
+                                
+                                <div class="comprar">Comprar</div> 
+                            </div>  -->
+
+
+                    </div>
+
+                </div>
+                <button id="btnVerMaisEpisodios" class="btn-ver-mais">Ver mais episódios</button>
+            </div>
+
+        </section>
+
+        <section id="localizacao">
+            <!-- <div class="seta">
+                <a href="#header"> seta </a>
+            </div> -->
+            <div id="caixa_localizacao" class="center">
+                <div class="titulo">
+                    <span>Localizações</span>
+                </div>
+                <div class="conteudo">
+                    <div class="localizacoes" id="cardLocalizacoes">
+
+                        <!-- <div class="caixa_personagem">
+                                <h2 class="caixa_titulo">
+                                    Nome do produto
+                                </h2>
+                                <figure class="caixa_imagem">
+                                    <img src="imagens/icone01.png">
+                                </figure>
+                                <div class="caixa_texto">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                    </p>
+                                    
+                                </div>
+                                
+                                <div class="comprar">Comprar</div> 
+                            </div>  -->
+
+
+                    </div>
+                </div>
+                <button id="btnVerMaisLocalizacoes" class="btn-ver-mais">Ver mais localizações</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="caixa_footer" class="center">
+                Projeto Simpsons - by <a target="_blank" class="link__footer" title="GitHub" href="https://github.com/vinyciosnavarro07">Vinycios Navarro</a>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
